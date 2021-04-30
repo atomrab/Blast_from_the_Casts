@@ -113,11 +113,18 @@ function setup3dhop() {
 
 	presenter.setScene({
 		meshes: {
-			"mesh_1" : { url: "models/hermes_masked_rough_small.nxz" }
+			"mesh_2" : { url: "models/coxrichard_upperfigs_tacctest.nxz" },
+			"mesh_1" : { url: "models/hermes_masked_rough_small.nxz" },
 		},
 		modelInstances : {
+			"model_2" : {
+				mesh : "mesh_2",
+				color : [0.8, 0.7, 0.75]
+				
+			},
 			"model_1" : {
-				mesh : "mesh_1"
+				mesh : "mesh_1",
+				color : [0.8, 0.7, 0.75]
 			}
 		},
 		trackball: {
