@@ -113,28 +113,26 @@ function setup3dhop() {
 
 	presenter.setScene({
 		meshes: {
-			"mesh_2" : { url: "models/coxrichard_upperfigs_tacctest.nxz" },
-			"mesh_1" : { url: "models/hermes_masked_rough_small.nxz" },
+			"mesh_1" : { url: "models/eurydice_lighting_test.nxz" },
 		},
 		modelInstances : {
-			"model_2" : {
-				mesh : "mesh_2",
-				color : [0.8, 0.7, 0.75]
-				
-			},
 			"model_1" : {
 				mesh : "mesh_1",
 				color : [0.8, 0.7, 0.75]
 			}
 		},
 		trackball: {
-			type : TurntablePanTrackball,
+			type : PanTiltTrackball,
 			trackOptions : {
-				startPhi: 35.0,
-				startTheta: 15.0,
+				startPanX: 0.0,
+				startPanY: 0.0,
+				startAngleX: 0.0,
+				startAngleY: 0.0,
 				startDistance: 2.5,
-				minMaxPhi: [-180, 180],
-				minMaxTheta: [-30.0, 70.0],
+				minMaxPanX: [-0.7, 0.7],
+				minMaxPanY: [-0.7, 0.7],
+				minMaxAngleX: [-70.0, 70.0],
+				minMaxAngleY: [-70.0, 70.0],
 				minMaxDist: [0.5, 3.0]
 			}
 		}
